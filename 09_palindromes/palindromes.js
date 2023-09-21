@@ -4,7 +4,7 @@ const palindromes = function (phrase) {
     let left = 0;
     let right = phrase_arr.length - 1;
     while (left <= right) {
-        if (phrase_arr[left] != phrase_arr[right]) {
+        if (phrase_arr[left].toUpperCase() != phrase_arr[right].toUpperCase()) {
             return false;
         }
         left++;
